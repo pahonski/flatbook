@@ -1,0 +1,29 @@
+{
+  "name": "racoon-blog",
+  "version": "1.0.0",
+  "description": "CSS Recipes & Layouts. Responsive Web Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artdrabinko/Racoon-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artdrabinko/Racoon-blog/issues"
+  },
+  "homepage": "https://github.com/artdrabinko/Racoon-blog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}

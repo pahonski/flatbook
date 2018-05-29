@@ -1,0 +1,187 @@
+* {
+  outline: 0;
+  font-family: sans-serif; }
+
+body {
+  background-color: #fafafa; }
+
+span.msg,
+span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit; }
+
+/*Styling Selectbox*/
+.dropdown {
+  width: 95%;
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+          box-shadow: 0 0 2px #cccccc;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: center; }
+
+.dropdown-mini {
+  width: 17%; }
+
+.dropdown .select {
+  cursor: pointer;
+  display: block;
+  padding: 5px; }
+
+.dropdown .select > i {
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  float: right;
+  line-height: 20px; }
+
+.dropdown:hover {
+  -webkit-box-shadow: 0 0 4px #cccccc;
+          box-shadow: 0 0 4px #cccccc; }
+
+.dropdown:active {
+  background-color: #f8f8f8; }
+
+.dropdown.active:hover,
+.dropdown.active {
+  -webkit-box-shadow: 0 0 4px #cccccc;
+          box-shadow: 0 0 4px #cccccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #f8f8f8; }
+
+.dropdown.active .select > i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  -webkit-box-shadow: 0 1px 2px #cccccc;
+          box-shadow: 0 1px 2px #cccccc;
+  border-radius: 0 1px 5px 5px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9; }
+
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none; }
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2; }
+
+.dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2; }
+
+.gradient {
+  /* ff3.6+ */
+  /* safari4+,chrome */
+  /* safari5.1+,chrome10+ */
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: -webkit-gradient(linear, left top, right top, from(#11b4bf), to(teal));
+  background: linear-gradient(90deg, #11b4bf 0%, teal 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11B4BF', endColorstr='#008080',GradientType=1 );
+  /* ie6-9 */ }
+
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+  .gradient {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff00c4f4",endColorstr="#ff036078",GradientType=0); } }
+
+.block-header {
+  width: 100%;
+  text-align: center;
+  font-size: 25px; }
+
+.add-header {
+  margin: 15px auto 15px;
+  text-align: center; }
+
+.add-description {
+  margin: 0 auto 15px;
+  padding: 10px;
+  border: 1px dashed #0064BB;
+  text-align: center; }
+
+.address {
+  margin: 0 auto 15px; }
+
+.attribute-name {
+  margin: 0 auto;
+  font-size: 18px; }
+
+.attribute-element {
+  margin-bottom: 10px; }
+
+.input-style {
+  width: 95%;
+  margin-left: 10px;
+  padding: 5px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+          box-shadow: 0 0 2px #cccccc;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: center; }
+
+.number-style {
+  width: 55px;
+  margin-left: 40%;
+  padding: 5px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+          box-shadow: 0 0 2px #cccccc;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  text-align: center; }
+
+#map {
+  margin-bottom: 15px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  padding: 0 15px;
+  color: whitesmoke; }
+
+.col {
+  text-align: center; }
+
+.row {
+  margin-bottom: 5px; }

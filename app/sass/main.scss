@@ -1,0 +1,20 @@
+@import "variables.scss";
+@import "components/dropdown.scss";
+@import "components/add-flat.scss";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+  color: whitesmoke;
+}
+
+.col {
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 5px;
+}
