@@ -1,225 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <title>Document</title>
 </head>
-<body class="gradient">
-  <div class="container">
-      <div class="row"><h2 class="add-header">Добавление квартиры</h2></div>
-      <div class="row"><p class="add-description">Рекомендуем заполнять все поля, чтобы объявление было максимально привлекательным.</p></div>
 
+<body>
+  <div class="container">
+
+    <div class="row">
+      <h2 class="add-header">Добавление квартиры</h2>
+    </div>
+    <div class="row">
+      <p class="add-description">Рекомендуем заполнять все поля, чтобы объявление было максимально привлекательным.</p>
+    </div>
+    <div class="geography">
       <div class="row">
         <h3 class="block-header">Географическая информация</h3>
       </div>
       <hr>
 
-      <div class="attribute-element">
-        <div class="row"><h4 class="attribute-name">Город</h4></div>
-      <div class="dropdown">
-        <div class="select">
-          <span>Выберите город...</span>
-          <i class="fa fa-chevron-left"></i>
-        </div>
-        <input type="hidden" name="gender">
-        <ul class="dropdown-menu">
-          <li id="male">Минск</li>
-          <li id="female">Гомель</li>
-          <li id="male">Минск</li>
-          <li id="female">Гомель</li>
-          <li id="male">Минск</li>
-          <li id="female">Гомель</li>
-        </ul>
-      </div>
-      </div>
-
-      <div class="attribute-element">
-        <div class="row"><h4 class="attribute-name">Адрес и номер дома</h4></div>
-        <input type="text" placeholder="Некрасова, 5" class="input-style">
-      </div>
-
-      <div class="attribute-element">
-        <div class="row"><h4 class="attribute-name">Район</h4></div>
-        <div class="dropdown">
-          <div class="select">
-            <span>Выберите район...</span>
-            <i class="fa fa-chevron-left"></i>
-          </div>
-          <input type="hidden" name="gender">
-          <ul class="dropdown-menu">
-            <li id="male">Московский</li>
-            <li id="female">Ленинский</li>
-            <li id="male">Октябрьский</li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="map" style="height: 400px"></div>       
-
       <div class="row">
-        <h3 class="block-header">Цены и услуги</h3>
-      </div>
-      <hr>
-
-      <div class="prices">
-        <div class="row">
-          <div class="col-7">
-            <h4 class="attribute-name">Сутки</h4>
-          </div>
-          <div class="col-5">
-            <input type="text" class="number-style"><span> р.</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-7">
-            <h4 class="attribute-name">Часы</h4>
-          </div>
-          <div class="col-5">
-            <input type="text" class="number-style"><span> р.</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-7">
-            <h4 class="attribute-name">Ночь</h4>
-          </div>
-          <div class="col-5">
-            <input type="text" class="number-style"><span> р.</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-7">
-            <h4 class="attribute-name">Месяц</h4>
-          </div>
-          <div class="col-5">
-            <input type="text" class="number-style"><span> р.</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-7">
-            <h4 class="attribute-name">Выходные и праздники</h4>
-          </div>
-          <div class="col-5">
-            <input type="text" class="number-style"><span> р.</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-7">
-            <h4 class="attribute-name">При аренде от
-              <div class="dropdown dropdown-mini">
-                <div class="select">
-                  <span>2</span>
-                  <i class="fa fa-chevron-left"></i>
-                </div>
-                <input type="hidden" name="gender">
-                <ul class="dropdown-menu">
-                  <li id="male">3</li>
-                  <li id="female">4</li>
-                  <li id="male">5</li>
-                  <li id="male">6</li>
-                </ul>
-              </div>
-              суток.
-            </h4>
-          </div>
-          <div class="col-5">
-            <input type="text" class="number-style"><span> р.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <h3 class="block-header">Условия заселения</h3>
-      </div>
-      <hr>
-
-      <div class="usloviya">
-        <div class="attribute-element">
-          <div class="row"><h4 class="attribute-name">Количество спальных мест</h4></div>
-          <div class="dropdown">
-            <div class="select">
-              <span>-Выбрать-</span>
-              <i class="fa fa-chevron-left"></i>
+        <div class="col-md-6">
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Город</h4>
             </div>
-            <input type="hidden" name="gender">
-            <ul class="dropdown-menu">
-              <li id="male">1</li>
-              <li id="female">2</li>
-              <li id="male">3</li>
-            </ul>
+            <div class="dropdown">
+              <div class="select">
+                <span>Выберите город...</span>
+                <i class="fa fa-chevron-left"></i>
+              </div>
+              <input type="hidden" name="gender">
+              <ul class="dropdown-menu">
+                <li data-city="minsk">Минск</li>
+                <li data-city="brest">Брест</li>
+                <li data-city="vitebsk">Витебск</li>
+                <li data-city="gomel">Гомель</li>
+                <li data-city="grodno">Гродно</li>
+                <li data-city="mogilev">Могилев</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Адрес и номер дома</h4>
+            </div>
+            <input type="text" placeholder="Некрасова, 5" class="input-style">
+          </div>
+
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Район</h4>
+            </div>
+            <div class="dropdown">
+              <div class="select">
+                <span>Выберите район...</span>
+                <i class="fa fa-chevron-left"></i>
+              </div>
+              <input type="hidden" name="gender">
+              <ul class="dropdown-menu">
+                <li id="male">Московский</li>
+                <li id="female">Ленинский</li>
+                <li id="male">Октябрьский</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="attribute-element">
-          <div class="row"><h4 class="attribute-name">Расположение спальных мест</h4></div>
-          <input type="text" placeholder="Например 2+2+1" class="input-style">
+        <div class="col-md-6">
+          <div id="map" style="height: 400px"></div>
         </div>
       </div>
-
-      
-
     </div>
 
 
-      <!-- <div class="dropdown">
-        <div class="select">
-          <span>Выберите город...</span>
-          <i class="fa fa-chevron-left"></i>
-        </div>
-        <input type="hidden" name="gender">
-        <ul class="dropdown-menu">
-          <li id="male">Минск</li>
-          <li id="female">Гомель</li>
-          <li id="male">Минск</li>
-          <li id="female">Гомель</li>
-          <li id="male">Минск</li>
-          <li id="female">Гомель</li>
-        </ul>
-      </div> -->
 
-    
-      
 
-    
-      <div class=""></div>
-      
-          <!-- <div class="dropdown">
-            <div class="select">
-              <span>Выберите город...</span>
-              <i class="fa fa-chevron-left"></i>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="prices">
+          <div class="row">
+            <h3 class="block-header">Цены и услуги</h3>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-8">
+              <h4 class="attribute-name">Сутки</h4>
             </div>
-            <input type="hidden" name="gender">
-            <ul class="dropdown-menu">
-              <li id="male">Минск</li>
-              <li id="female">Гомель</li>
-              <li id="male">Минск</li>
-              <li id="female">Гомель</li>
-              <li id="male">Минск</li>
-              <li id="female">Гомель</li>
-            </ul>
-          </div> -->
-      
-      <span class="msg"></span>
-    
-  </div>
-  
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">
-</script>
+            <div class="col-4">
+              <input type="text" class="number-style">
+              <span> р.</span>
+            </div>
+          </div>
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  
-<script src="js/index.js"></script>
+          <div class="row">
+            <div class="col-8">
+              <h4 class="attribute-name">Часы</h4>
+            </div>
+            <div class="col-4">
+              <input type="text" class="number-style">
+              <span> р.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <h4 class="attribute-name">Ночь</h4>
+            </div>
+            <div class="col-4">
+              <input type="text" class="number-style">
+              <span> р.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <h4 class="attribute-name">Месяц</h4>
+            </div>
+            <div class="col-4">
+              <input type="text" class="number-style">
+              <span> р.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <h4 class="attribute-name">Выходные и праздники</h4>
+            </div>
+            <div class="col-4">
+              <input type="text" class="number-style">
+              <span> р.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <h4 class="attribute-name">При аренде от
+                <div class="dropdown dropdown-mini">
+                  <div class="select">
+                    <span>2</span>
+                    <i class="fa fa-chevron-left"></i>
+                  </div>
+                  <input type="hidden" name="gender">
+                  <ul class="dropdown-menu">
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                  </ul>
+                </div>
+                суток.
+              </h4>
+            </div>
+            <div class="col-4">
+              <input type="text" class="number-style">
+              <span> р.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <h3 class="block-header">Условия заселения</h3>
+        </div>
+        <hr>
+
+        <div class="conditions">
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Количество спальных мест</h4>
+            </div>
+            <div class="dropdown">
+              <div class="select">
+                <span>-Выбрать-</span>
+                <i class="fa fa-chevron-left"></i>
+              </div>
+              <input type="hidden" name="gender">
+              <ul class="dropdown-menu">
+                <li id="male">1</li>
+                <li id="female">2</li>
+                <li id="male">3</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Расположение спальных мест</h4>
+            </div>
+            <input type="text" placeholder="Например 2+2+1" class="input-style">
+          </div>
+
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Время заселения</h4>
+            </div>
+            <div class="check-time">
+              <div class="row">
+                <div class="check-time-element">
+                  C
+                  <input type="text" class="number-style"> до
+                  <input type="text" class="number-style"> ч.
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="check-time-element">
+                  <!-- <label>
+                    <input type="checkbox"> Круглосуточно
+                  </label> -->
+                  <label class="styled-checkbox">
+                    <input type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Круглосуточно
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Выселение до:</h4>
+            </div>
+            <div class="check-time">
+              <div class="row">
+                <div class="check-time-element">
+                  <input type="text" class="number-style"> ч.
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="conditions-checkboxes">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  Нужна предоплата
+                </label>
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  Нужен документ, удостоверяющий личность
+                </label>
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  С детьми разрешено
+                </label>
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  С животными разрешено
+                </label>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  Курение разрешено
+                </label>
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  Сдается для вечеринок
+                </label>
+                <label class="styled-checkbox">
+                  <input type="checkbox" name="remember">
+                  <span class="checkbox-indicator"></span>
+                  Нужен залог
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="attribute-element">
+            <div class="row">
+              <h4 class="attribute-name">Доп. условия заселения</h4>
+            </div>
+              <div class="description-field">
+                  <textarea name="description" type="textarea" class="conditions-description"  rows="8">Введите текст</textarea>
+              </div>
+              
+            
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class=""></div>
+
+
+  <span class="msg"></span>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+  <script src="js/index.js"></script>
 </body>
+
 </html>

@@ -49,10 +49,14 @@
         height: 100%;
         text-align: center;
     }
+
+    .input-style--margin {
+        margin-left: 10px;
+    }
     
     .number-style {
         width: 55px;
-        margin-left: 40%;
+        // margin-left: 40%;
         padding: 5px;
         display: inline-block;
         background-color: #fff;
@@ -67,4 +71,75 @@
     
     #map {
         margin-bottom: 15px
+    }
+
+    .check-time {
+        text-align: center;
+    }
+
+    .check-time-element {
+        margin: 0 auto;
+    }
+
+    //checkbox
+
+    .styled-checkbox {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+    }
+    
+    .styled-checkbox:hover {
+        
+        // text-shadow: 0 0 1em #6D6F72;
+    }
+    
+    .styled-checkbox input[type="checkbox"] {
+        display: none;
+    }
+    
+    .styled-checkbox input[type="checkbox"] + .checkbox-indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        border: 2px solid #6D6F72;
+    }
+    
+    
+    .styled-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after,
+    .styled-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 2px;
+        background-color: #6D6F72;
+        top: 6px;
+        left: -1px;
+    }
+    
+    .styled-checkbox input[type="checkbox"] + .checkbox-indicator::after {
+        transform: rotate(45deg);
+    }
+    
+    .styled-checkbox input[type="checkbox"] + .checkbox-indicator::before {
+        transform: rotate(-45deg);
+    }
+
+    //
+
+    .conditions-checkboxes {
+        margin-bottom: 10px; 
+        padding-top: 10px; 
+        border: 1px solid lightgray;
+    }
+
+    .conditions-checkboxes .styled-checkbox{
+        display: block;
+        margin-left: 35px;
+    }
+
+    .conditions-description {
+        width: 100%;
     }
