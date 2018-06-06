@@ -39,7 +39,7 @@
                 <span>Выберите город...</span>
                 <i class="fa fa-chevron-left"></i>
               </div>
-              <input type="hidden" name="gender">
+              <input type="hidden" name="city">
               <ul class="dropdown-menu">
                 <li data-city="minsk">Минск</li>
                 <li data-city="brest">Брест</li>
@@ -67,7 +67,7 @@
                 <span>Выберите район...</span>
                 <i class="fa fa-chevron-left"></i>
               </div>
-              <input type="hidden" name="gender">
+              <input type="hidden" name="area">
               <ul class="dropdown-menu">
                 <li id="male">Московский</li>
                 <li id="female">Ленинский</li>
@@ -293,19 +293,34 @@
             <div class="row">
               <h4 class="attribute-name">Доп. условия заселения</h4>
             </div>
-              <div class="description-field">
-                  <textarea name="description" type="textarea" class="conditions-description"  rows="8">Введите текст</textarea>
-              </div>
-              
-            
+            <div class="description-field">
+              <textarea placeholder="Введите текст..." name="description" type="textarea" class="conditions-description" rows="8"></textarea>
+            </div>
+
+
 
           </div>
+        </div>
 
+        <div class="house-description">
+          <div class="row">
+            <h3 class="block-header">Описание дома</h3>
+          </div>
 
+          <div class="check-floor-element">
+            <p>Этаж/этажей</p>
+            <input type="text" class="number-style"> из
+            <input type="text" class="number-style">
+          </div>
 
-
-
-
+          <div class="house-type">
+              <ul class="btn-container">
+                  <li data-input_id="#Flat_type_of_house" data-val="10" class="btn blue">Кирпичный</li>
+                  <li data-input_id="#Flat_type_of_house" data-val="20" class="btn blue">Монолитный</li>
+                  <li data-input_id="#Flat_type_of_house" data-val="30" class="btn blue">Панельный</li>
+              </ul>
+              <input name="Flat[type_of_house]" id="Flat_type_of_house" type="hidden" value="30">
+          </div>
 
 
         </div>

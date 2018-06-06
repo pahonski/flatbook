@@ -24,3 +24,16 @@ function init(){
         zoom: 7
     });
 }
+
+//buttons
+var buttonContainer = document.querySelector('.btn-container');
+buttonContainer.onclick = function(e) {
+  console.log(e.target.tagName);
+  if(e.target.tagName == 'LI') {
+    var elements = buttonContainer.querySelectorAll('.btn');
+    elements.forEach(function(el) {
+      el.classList.remove('active-btn');
+    });
+    e.target.classList.add('active-btn');
+  }
+}
