@@ -117,11 +117,17 @@ span.choose {
   margin: 0 auto 15px; }
 
 .attribute-name {
-  margin: 0 auto;
+  margin: 0 auto 15px;
   font-size: 18px; }
 
 .attribute-element {
-  margin-bottom: 10px; }
+  margin-bottom: 25px; }
+
+.attribute-description {
+  margin: 0 auto 15px;
+  padding: 10px;
+  border: 1px dashed #0064BB;
+  text-align: center; }
 
 .input-style {
   width: 95%;
@@ -201,26 +207,88 @@ span.choose {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg); }
 
-.conditions-checkboxes {
+.conditions-checkboxes,
+.house-checkboxes {
   margin-bottom: 10px;
   padding-top: 10px;
   border: 1px solid lightgray; }
 
-.conditions-checkboxes .styled-checkbox {
+.conditions-checkboxes .styled-checkbox,
+.house-checkboxes .styled-checkbox {
   display: block;
   margin-left: 35px; }
 
-.conditions-description {
+.conditions-description,
+.ad-phrase-element,
+.flat-description-element {
   width: 100%; }
 
+.house-description {
+  margin-bottom: 10px; }
+
 .check-floor-element {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   text-align: center; }
 
 .house-type ul {
-  margin: 0;
   padding: 0;
   list-style-type: none; }
+
+.image-container {
+  margin-bottom: 15px;
+  padding-left: 33px; }
+
+.image-element {
+  position: relative;
+  list-style: none;
+  float: left;
+  width: 148px;
+  height: 110px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  line-height: 103px;
+  border: 2px solid #ccc;
+  margin: 10px 10px 0 0;
+  border-radius: 5px; }
+  .image-element img {
+    max-width: 100%;
+    vertical-align: middle; }
+  .image-element .img-is-main-btn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    line-height: normal; }
+    .image-element .img-is-main-btn i {
+      cursor: pointer;
+      color: green; }
+  .image-element .img-remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    line-height: normal; }
+
+.check-space-element {
+  text-align: center; }
+
+.symbols {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic; }
+
+.prices, .conditions, .house-description, .flat-description {
+  max-width: 800px;
+  margin: 0 auto 20px; }
+
+.prices-box {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.btn-container {
+  text-align: center;
+  margin-bottom: 35px; }
+  .btn-container li {
+    margin-bottom: 10px; }
 
 .btn.large,
 .btn-two.large,
@@ -261,10 +329,10 @@ span.choose {
   background-color: #7fb1bf; }
 
 .btn.green, .btn-two.green {
-  background-color: #9abf7f; }
+  background-color: #5CB95C; }
 
 .btn.red, .btn-two.red {
-  background-color: #fa5a5a; }
+  background-color: #D14641; }
 
 .btn.purple, .btn-two.purple {
   background-color: #cb99c5; }
@@ -508,9 +576,25 @@ span.choose {
 .active-btn {
   background-color: #3054B5 !important; }
 
+.download-button {
+  display: block;
+  margin: 0 auto 15px; }
+
+.download-button input {
+  display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 699px) {
+  .submit-buttons a, .submit-buttons button {
+    display: inline-block;
+    margin-bottom: 20px; } }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 .container {
   padding: 0 15px; }

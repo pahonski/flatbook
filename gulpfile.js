@@ -46,7 +46,7 @@ gulp.task('html', function () {
 
 gulp.task('js', function () {
   gulp.src(config.app + '/js/**/*.js')
-    .pipe(uglifyJs())
+    // .pipe(uglifyJs())
     .pipe(gulp.dest(config.dist + '/js'))
     .pipe(browserSync.reload({stream: true}))
 });

@@ -26,12 +26,19 @@
     }
     
     .attribute-name {
-        margin: 0 auto;
+        margin: 0 auto 15px;
         font-size: 18px;
     }
     
     .attribute-element {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+    }
+
+    .attribute-description {
+        margin: 0 auto 15px;
+        padding: 10px;
+        border: 1px dashed #0064BB;
+        text-align: center;
     }
     
     .input-style {
@@ -89,11 +96,6 @@
         cursor: pointer;
     }
     
-    .styled-checkbox:hover {
-        
-        // text-shadow: 0 0 1em #6D6F72;
-    }
-    
     .styled-checkbox input[type="checkbox"] {
         display: none;
     }
@@ -129,31 +131,111 @@
 
     //
 
-    .conditions-checkboxes {
+    .conditions-checkboxes,
+    .house-checkboxes {
         margin-bottom: 10px; 
         padding-top: 10px; 
         border: 1px solid lightgray;
     }
 
-    .conditions-checkboxes .styled-checkbox{
+    .conditions-checkboxes .styled-checkbox,
+    .house-checkboxes .styled-checkbox{
         display: block;
         margin-left: 35px;
     }
 
-    .conditions-description {
+    .conditions-description,
+    .ad-phrase-element,
+    .flat-description-element {
         width: 100%;
     }
 
-    .check-floor-element {
+    .house-description {
         margin-bottom: 10px;
+    }
+
+    .check-floor-element {
+        margin-bottom: 25px;
         text-align: center;
     }
 
     .house-type {
         & ul {
-            margin: 0;
             padding: 0;
             list-style-type: none;
         }
         
     }
+
+    .image-container {
+        margin-bottom: 15px;
+        padding-left: 33px;
+    }
+
+    .image-element {
+        position: relative;
+        list-style: none;
+        float: left;
+        width: 148px;
+        height: 110px;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        line-height: 103px;
+        border: 2px solid #ccc;
+        margin: 10px 10px 0 0;
+        border-radius: 5px;
+        & img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .img-is-main-btn {
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            line-height: normal;
+
+            & i {
+                cursor: pointer;
+                color: green;
+            }
+        }
+    
+        .img-remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            line-height: normal;
+        }
+
+        
+
+
+    }
+
+    .check-space-element {
+        text-align: center;
+    }
+
+    .symbols {
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    // @media screen and (min-width: 320px) and (max-width: 699px) {
+    //     display: inline-block;
+    //     margin-bottom: 20px;
+    // }
+
+    .prices, .conditions, .house-description, .flat-description {
+        max-width: 800px;
+        margin: 0 auto 20px;
+    }
+
+    .prices-box {
+       max-width: 500px;
+       margin: 0 auto;
+    }
+

@@ -25,15 +25,31 @@ function init(){
     });
 }
 
-//buttons
-var buttonContainer = document.querySelector('.btn-container');
-buttonContainer.onclick = function(e) {
-  console.log(e.target.tagName);
-  if(e.target.tagName == 'LI') {
-    var elements = buttonContainer.querySelectorAll('.btn');
-    elements.forEach(function(el) {
-      el.classList.remove('active-btn');
-    });
-    e.target.classList.add('active-btn');
+// buttons active
+// var buttonContainer = document.querySelectorAll('.btn-container');
+// buttonContainer.forEach(function(element) {
+//   element.onclick = function(e) {
+//     if(e.target.tagName == 'LI') {
+//       var elements = element.querySelectorAll('.btn');
+//       elements.forEach(function(el) {
+//         el.classList.remove('active-btn');
+//       });
+//       e.target.classList.add('active-btn');
+//     }
+//   }
+// });
+
+var buttonContainer = document.querySelectorAll('.btn-container');
+
+for(let i = 0; i < buttonContainer.length; i++) {
+  let element = buttonContainer[i];
+  element.onclick = function(e) {
+    if(e.target.tagName === 'LI') {
+      let elements = element.querySelectorAll('.btn');
+      for(let k = 0; k < elements.length; k++) {
+        elements[k].classList.remove('active-btn');
+      }
+      e.target.classList.add('active-btn');
+    }
   }
 }
