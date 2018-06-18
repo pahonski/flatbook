@@ -8,6 +8,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <title>Document</title>
@@ -27,7 +28,6 @@
         <h3 class="block-header">Географическая информация</h3>
       </div>
       <hr>
-
       <div class="row">
         <div class="col-md-6">
           <div class="attribute-element">
@@ -94,7 +94,7 @@
             <h4 class="attribute-name">Сутки</h4>
           </div>
           <div class="col-4">
-            <input type="text" class="number-style">
+            <input type="text" class="number-style price-style">
             <span> р.</span>
           </div>
         </div>
@@ -104,7 +104,7 @@
             <h4 class="attribute-name">Часы</h4>
           </div>
           <div class="col-4">
-            <input type="text" class="number-style">
+            <input type="text" class="number-style price-style">
             <span> р.</span>
           </div>
         </div>
@@ -114,7 +114,7 @@
             <h4 class="attribute-name">Ночь</h4>
           </div>
           <div class="col-4">
-            <input type="text" class="number-style">
+            <input type="text" class="number-style price-style">
             <span> р.</span>
           </div>
         </div>
@@ -124,7 +124,7 @@
             <h4 class="attribute-name">Месяц</h4>
           </div>
           <div class="col-4">
-            <input type="text" class="number-style">
+            <input type="text" class="number-style price-style">
             <span> р.</span>
           </div>
         </div>
@@ -134,7 +134,7 @@
             <h4 class="attribute-name">Выходные и праздники</h4>
           </div>
           <div class="col-4">
-            <input type="text" class="number-style">
+            <input type="text" class="number-style price-style">
             <span> р.</span>
           </div>
         </div>
@@ -160,7 +160,7 @@
             </h4>
           </div>
           <div class="col-4">
-            <input type="text" class="number-style">
+            <input type="text" class="number-style  price-style">
             <span> р.</span>
           </div>
         </div>
@@ -357,7 +357,10 @@
       <div class="attribute-element">
         <div class="row">
           <div class="col-12">
-            <h4 class="attribute-name">Фото</h4>
+            <div class="row">
+                <h4 class="attribute-name">Фото</h4>
+            </div>
+            
           </div>
           <div class="col-12">
             <p class="attribute-description">
@@ -372,7 +375,7 @@
             Нажмите для загрузки
             <input multiple="multiple" id="download-button" type="file" class="">
           </label>
-          <div class="row">
+          
             <div class="col-12">
               <div class="image-container">
                 <div class="image-element">
@@ -427,7 +430,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          
 
 
         </div>
@@ -646,6 +649,8 @@
       <a href="/flat/flatActive/" class="btn red">Вернуться назад</a>
       <button class="btn green" id="yw0" type="submit" name="yt0">Отправить на модерацию</button>
     </div>
+
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
   </div>
 

@@ -110,7 +110,6 @@ span.choose {
 .add-description {
   margin: 0 auto 15px;
   padding: 10px;
-  border: 1px dashed #0064BB;
   text-align: center; }
 
 .address {
@@ -126,7 +125,6 @@ span.choose {
 .attribute-description {
   margin: 0 auto 15px;
   padding: 10px;
-  border: 1px dashed #0064BB;
   text-align: center; }
 
 .input-style {
@@ -163,6 +161,9 @@ span.choose {
   font-size: 14px;
   color: #474747;
   text-align: center; }
+
+.price-style {
+  margin-left: 7%; }
 
 #map {
   margin-bottom: 15px; }
@@ -587,6 +588,35 @@ span.choose {
   .submit-buttons a, .submit-buttons button {
     display: inline-block;
     margin-bottom: 20px; } }
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #7fb1bf;
+  background: rgba(127, 177, 191, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(127, 177, 191, 0.9); }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

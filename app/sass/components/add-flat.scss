@@ -17,7 +17,6 @@
     .add-description {
         margin: 0 auto 15px;
         padding: 10px;
-        border: 1px dashed #0064BB;
         text-align: center
     }
     
@@ -37,7 +36,6 @@
     .attribute-description {
         margin: 0 auto 15px;
         padding: 10px;
-        border: 1px dashed #0064BB;
         text-align: center;
     }
     
@@ -63,7 +61,7 @@
     
     .number-style {
         width: 55px;
-        // margin-left: 40%;
+        // margin-left: 25px;
         padding: 5px;
         display: inline-block;
         background-color: #fff;
@@ -74,6 +72,10 @@
         font-size: 14px;
         color: #474747;
         text-align: center;
+    }
+
+    .price-style {
+        margin-left: 7%;
     }
     
     #map {
